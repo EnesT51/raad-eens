@@ -23,7 +23,7 @@ while ronden < 20:
             print("je hebt het goed geraden score is" , score)
             score+=1
             poging = 0
-            break
+            
             
         else:
             print("poging",poging)
