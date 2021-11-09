@@ -5,7 +5,6 @@ score = 0
 
 while ronden < 20:
     nummer = random.randint(1,1000)
-    print(nummer)
     print("dit is ronden", ronden)
     ronden +=1
     poging = 1
@@ -16,7 +15,7 @@ while ronden < 20:
         
         if guess.isdigit()==False:
             print("de game is gestopt je hebt" ,score,"punten gescoord")
-            poging = 10 
+            poging = 1 
             ronden = 20 
             
         elif int(guess) == nummer:
