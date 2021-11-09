@@ -13,6 +13,7 @@ while ronden < 20:
     while poging < 10:
         
         guess = input("raad het getal tussen 1 en de 1000. of als je wilt stoppen type stop!: ")
+        
         if guess.isdigit()==False:
             print("de game is gestopt je hebt" ,score,"punten gescoord")
             poging = 10 
@@ -25,7 +26,6 @@ while ronden < 20:
             break
             
         else:
-            print("fout! probeer het nogmaals!")
             print("poging",poging)
             poging +=1
             poging > 10
@@ -40,7 +40,7 @@ while ronden < 20:
                 richting = 'lager'
 
             if verschil < 20:
-                print("je hebt het bijna goed raad", richting)
+                print("je hebt het bijna goed raad", richting,"!")
             elif verschil < 50:
                 print("niet goed raad wat", richting,"!")
             else:
